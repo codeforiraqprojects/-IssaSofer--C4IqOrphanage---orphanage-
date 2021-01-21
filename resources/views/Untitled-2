@@ -1,0 +1,15 @@
+@cannot('kind', Auth::user())
+     @foreach($myorphans as $myorphan)
+          @if (count($myorphan->id))
+               {!! Form::open(['action' => ['myorphanController@story', $orphan->id, Auth()->user()->id], 'method' => 'POST']) !!}
+                    {{Form::submit('اضافة الى ايتامي', ['class'=>'btn btn-primary  pull-right'])}}
+               {!! Form::close() !!}
+          @else
+               @if(auth()->user()->id == $myorphan->user_id && $orphan->id !== $myorphan->orphan_id)
+                    {!! Form::open(['action' => ['myorphanController@story', $orphan->id, Auth()->user()->id], 'method' => 'POST']) !!}
+                         {{Form::submit('اضافة الى ايتامي', ['class'=>'btn btn-primary  pull-right'])}}
+                    {!! Form::close() !!}
+               @endif
+          @endif
+     @endforeach
+@endconnot

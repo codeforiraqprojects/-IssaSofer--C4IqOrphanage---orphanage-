@@ -1,0 +1,508 @@
+body{
+    font-family: Cairo
+}
+
+p{
+    line-height: 2;
+}
+/*** navbar ***/
+
+.navbar{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    color: #fff !important;
+    padding: 12px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 20px
+}
+
+.navbar-light .navbar-nav .nav-item{
+    padding: 0 5px
+}
+
+.navbar-light .navbar-nav .nav-item span{
+     display: none;
+}
+
+.bt{
+    background-color: #817a7a;
+    color: #fff !important;
+    margin: 0 8px;
+    padding: 5px;
+    border-radius: 9px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+.bt:hover{
+    background-color: #fff;
+    color: #000 !important;
+}
+
+.dropdown-menu-right{
+    left: 0;
+    right: inherit
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+
+}
+
+/*** body ***/
+
+.header{
+    position: relative;
+    background: url("../image/header.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 569px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .overlay{
+    position: absolute;
+    background: rgba(92, 180, 92, 0.21);
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 70px;
+    color: #fff;
+}
+
+.header .text{
+     display: table;
+     height: 100%
+}
+
+.header .overlay .content{
+     display: table-row;
+     height: 100%
+}
+
+.header .overlay .content .cont{
+     display: table-cell;
+     vertical-align: bottom;
+
+}
+
+.header .overlay .content .cont h2{
+     margin-bottom: 30px
+}
+/** end body **/
+
+/** start about **/
+
+.about{
+    direction: rtl;
+    margin: 40px 0;
+}
+
+.about .cart {
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px #21781f;
+    -webkit-1px 1px 1px 1px #21781f;
+    -moz-1px 1px 1px 1px #21781f;
+    -o-1px 1px 1px 1px #21781f
+}
+
+.about .cart .content .h3{
+    color: #5cb45c
+}
+.about .cart .photo{
+    width: 100%;
+    height: 100%
+}
+
+.about .cart .photo img{
+    width: 100%;
+    height: 100%;
+}
+
+/** end about **/
+
+/** start news **/
+
+.news{
+    background-color: #ccc;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.news h2{
+    padding-bottom: 20px;
+    color: #5cb45c;
+    font-weight: bold;
+}
+
+/** connection with orpans **/
+.news .content,
+.orphans .counts{
+    width: 80%;
+    margin: 10px auto
+}
+
+.news .img,
+.news .img img
+{
+    width: 100%;
+    height: 210px
+}
+
+.news .contents{
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 25px
+}
+
+.news .contents p{
+    color:#514b4b
+}
+/** end news **/
+
+/** start orphans **/
+.orphans{
+    background-color: #444;
+    color:#fff;
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+
+.orphans h5{
+    font-weight: 100
+}
+
+.orphans p{
+    font-size: 20px;
+    font-weight: bold
+}
+
+.b-font{
+     font-size: 14px !important
+}
+
+.adopted input{
+     margin-right: 1px !important
+}
+/** end orphans **/
+
+/** start footer **/
+.footer{
+    background-color: #5cb45c;
+    padding-top: 25px;
+}
+
+.footer i{
+    margin: 0 5px;
+    background-color: #fff;
+    padding: 5px;
+    color: #000
+}
+
+/** end footer **/
+
+/** start login & register **/
+
+.logins, .register {
+    margin: 40px 0
+}
+
+.logins .log,
+.register .log{
+    box-shadow: 1px 1px 14px 0px #000000;
+    -webkit-1px 1px 14px 0px #000000;
+    -moz-1px 1px 14px 0px #000000;
+    -o-1px 1px 14px 0px #000000
+}
+
+.logins .log h3,
+.register .log h3{
+    margin: 35px 0
+}
+
+.logins .log form,
+.register .log form{
+    padding: 0 70px
+}
+
+.logins .log form .socialite{
+    margin: 20px 0;
+}
+
+.logins .log form .socialite .btn-facebook,
+.logins .log form .socialite .btn-google{
+    color: #fff;
+    margin: -2px;
+    border-radius: 0;
+    padding: 10px 25px 10px 25px;
+    font-size: 15px;
+}
+
+.logins .log form .socialite .btn-facebook i,
+.logins .log form .socialite .btn-google i{
+    font-size: 20px;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+}
+
+.logins .log form .socialite .btn-facebook:hover i,
+.logins .log form .socialite .btn-google:hover i{
+    padding-right: 10px;
+}
+
+.logins .log form .socialite .btn-facebook{
+    background-color: #0095ff;
+    border-radius: 0 20px 20px 0
+}
+
+.logins .log form .socialite .btn-google{
+    background-color: #ec5123;
+    border-radius: 20px 0 0 20px
+}
+
+.logins .log form label,
+.register .log form label{
+    float: right;
+    font-size: 20px
+}
+
+.logins .log form input,
+.register .log form input{
+    margin-bottom: 25px;
+}
+
+.logins .log form button,
+.register .log form button{
+    background-color: #5cb45c;
+    width: 100%;
+    margin-bottom: 30px
+}
+
+.logins .log form button{
+    margin-bottom: 15px !important
+}
+
+.logins .log form a{
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 20px
+}
+
+.logins .log form .rest{
+    float: right
+}
+
+.logins .log .img,
+.register .log .img{
+    width: 100%;
+    height: 100%;
+}
+
+.logins .log .img img,
+.register .log .img img{
+    width: 100%;
+    height: 100%;
+}
+
+/** start media **/
+
+@media (max-width: 1091px) {
+    .about .cart,
+    .news .content,
+    .orphans .counts{
+        width: 100% !important;
+        margin: 0
+
+    }
+
+    .logins .container,
+    .register .container{
+        max-width: 900px
+    }
+
+
+}
+
+/** end media **/
+
+/** start contact us **/
+
+.contact-us{
+    margin: 40px 0
+}
+
+
+
+.contact-us .contact{
+    box-shadow: 1px 1px 14px 0px #000000;
+    -webkit-1px 1px 14px 0px #000000;
+    -moz-1px 1px 14px 0px #000000;
+    -o-1px 1px 14px 0px #000000
+}
+
+.contact-us .contact h2{
+    padding-top: 25px
+}
+
+.contact-us .contact form{
+    padding: 30px
+}
+
+.contact-us .contact form .f-contact{
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+.contact-us .contact form textarea{
+    height: 100px;
+}
+
+.contact-us .contact form textarea,
+.contact-us .contact form .f-contact{
+    margin-bottom: 30px;
+    border-color: #ccc;
+    padding: 10px;
+    outline: none;
+    resize: none
+}
+
+.contact-us .contact form button{
+
+    padding: 10px;
+    width: 140px
+}
+
+.contact-us .contact .map{
+    width: 100%;
+    padding: 30px;
+}
+
+.contact-us .contact .map iframe{
+    width: 100%;
+    padding: 30px;
+}
+
+.contact-us .contact .map .text .phone{
+    direction: ltrd
+}
+/** end contact us **/
+
+/** start orphans **/
+.orphans-body{
+     margin:40px 0
+}
+
+.orphans-body .orphan{
+     box-shadow: 1px 1px 5px  #000;
+     margin: 40px 0
+}
+
+.orphans-body .orphan .image{
+     width: 100%;
+     height: 160px;
+
+}
+
+.orphans-body .orphan .image img{
+     width: 100%;
+     height: 100%
+}
+
+.orphans-body .orphan .text{
+     padding: 10px
+}
+
+.orphans-body .orphan .text p{
+     text-align: right;
+     padding: 0 10px;
+     color: #8b8888;
+}
+
+.orphans-body .orphan .text button,
+.orphans-body .orphan .text input{
+     margin: 10px 0
+}
+
+.orphans-body .info{
+     text-align: right;
+     width: 50%;
+     margin: 0 auto;
+     background: #fff;
+     border: 1px solid #ccc;
+     padding: 10px;
+     position: absolute;
+     top: -600px;
+     z-index: 999999;
+     right: 25%;
+}
+
+.orphans-body .info .image{
+     width: 50%;
+     margin: 20px auto;
+}
+
+.orphans-body .info .image img{
+     width: 100%
+}
+
+.orphans-body .info .closes{
+     border: none;
+     background-color: #555;
+     color: #fff;
+     padding: 10px 20px;
+     font-size: 20px;
+     cursor: pointer;
+}
+
+.hidden{
+     display: none;
+}
+
+@media (max-width: 633px) {
+     .orphans-body .info{
+          width: 90% !important;
+          right: 5%;
+     }
+}
+
+/** end orphans **/
+
+/** start add new orphan page **/
+.orphan-add{
+     padding: 40px
+}
+
+.orphan-add .add{
+     margin: 25px auto;
+     width: 50%
+}
+
+.orphan-add .add label{
+     float: right;
+}
+
+.orphan-add .add input{
+     border: none;
+     border-bottom: 1px solid #ccc;
+     box-shadow:none
+}
+
+@media (max-width: 844px) {
+     .orphan-add .add{
+          width: 90%
+     }
+}
+
+/** end add new orphan page **/
